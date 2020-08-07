@@ -1,9 +1,13 @@
 const person = {
   name: "Casey",
-  walk() {},
-  talk() {},
+  walk() {
+    console.log(this);
+  },
 };
 
-person.talk();
-person["name"] = "John";
-person.name = "casey";
+person.walk();
+
+const walk = person.walk;
+// console.log(walk);
+walk();
+// window object reference
