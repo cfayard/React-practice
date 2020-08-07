@@ -6,3 +6,4 @@ const person = {
 
 person.talk();
 person["name"] = "John";
+person.name = "casey";
