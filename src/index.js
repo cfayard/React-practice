@@ -1,4 +1,3 @@
-
 class Person {
   constructor(name) {
     this.name = name;
@@ -9,5 +8,17 @@ class Person {
   }
 }
 
-const person = new Person('casey')
-person.
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name);
+    this.degree = degree;
+  }
+
+  teach() {
+    console.log("teach");
+  }
+}
+
+const teacher = new Teacher("casey", "hardknocks");
+
+console.log(teacher);
